@@ -1,0 +1,27 @@
+.gif-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 240px;
+    height: 320px;
+
+    &__img {
+        width: 75%;
+        height: 75%;
+        object-fit: contain;
+    }
+
+    &__button {
+        cursor: pointer;
+        background-color: rgb(50, 108, 236);
+        height: 35px;
+        width: 100px;
+        color: white;
+        font-size: 15px;
+        border: 0px;
+        border-radius: 5px;
+    }
+
+}

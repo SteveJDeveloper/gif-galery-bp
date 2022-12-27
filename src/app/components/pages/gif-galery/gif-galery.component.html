@@ -1,0 +1,11 @@
+<div class="gif-galery">
+    <app-header (addEvent)="eventListener($event,'añadir')"></app-header>
+    <div class="gif-galery__list" *ngIf="gifs.length > 0 else noGifs">
+        <app-gif-card *ngFor="let gif of gifs" [gif]="gif" (deleteEvent)="eventListener($event,'eliminar')"></app-gif-card>
+    </div>
+    <ng-template #noGifs>
+        <div class="gif-galery__notification">
+            No posee Gifs
+        </div>
+    </ng-template>
+</div>

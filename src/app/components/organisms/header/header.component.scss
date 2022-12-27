@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    &__title {
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    &__input {
+        border: 2px solid rgb(206, 211, 217);
+        height: 34px;
+        padding-left: 10px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-right: 0px;
+        width: 25vw;
+        min-width: 250px;
+    }
+
+    &__button {
+        cursor: pointer;
+        background-color: white;
+        border: 2px solid rgb(109, 116, 124);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        height: 40px;
+        width: 80px;
+        color: rgb(138, 144, 150);
+    }
+
+    &__invalid {
+        color: rgb(228, 66, 45);
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,10 @@
+<div class="header">
+    <div class="header__title">Gif Galery</div>
+    <div>
+        <form autocomplete="off" [formGroup]="reactiveForm" (ngSubmit)="saveGif()">
+            <input class="header__input" type="text" placeholder="Gift URL" formControlName="url">
+            <button class="header__button">Agregar</button>
+        </form>
+        <small *ngIf="urlValid" class="header__invalid">URL NO VALIDA</small>
+    </div>
+</div>
